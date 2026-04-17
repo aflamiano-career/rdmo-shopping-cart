@@ -25,6 +25,16 @@ A modern minimalist shopping cart built with React 19 + React Router v7.
 
 - Graceful offline fallback — embedded product data is used if the API is unreachable, so the app always works
 
+## Limitations
+
+This is a **demo project** and is not intended for production use.
+
+- No checkout or payment processing — the cart is UI-only
+- No user authentication or accounts
+- Product data is sourced from [FakeStore API](https://fakestoreapi.com/), a public mock API
+- Fallback product images use a free, copyright-free placeholder image
+- No persistent cart — state is lost on page refresh
+
 ## Architecture
 
 **Routing.** Uses `createBrowserRouter` from React Router v7 (data router API), enabling `loader`, `action`, route-level `errorElement`, and deferred data. Router config lives in `router.jsx`, consumed by a single `<RouterProvider>` in `App.jsx`. A `RootLayout` holds shared chrome (`Navbar`, `Footer`) and an `<Outlet />` for page components.
