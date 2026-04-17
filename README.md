@@ -2,6 +2,12 @@
 
 A modern minimalist shopping cart built with React 19 + React Router v7.
 
+---
+
+## [→ View Live Site](https://rdmo-shopping-cart.vercel.app)
+
+---
+
 ## Features
 
 ### Shopping
