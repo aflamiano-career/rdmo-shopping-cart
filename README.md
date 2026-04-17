@@ -2,14 +2,6 @@
 
 A modern minimalist shopping cart built with React 19 + React Router v7.
 
-## Quick Start
-
-```bash
-npm install
-npm run dev       # dev server at http://localhost:5173
-npm run build     # production build
-```
-
 ## Features
 
 ### Shopping
