@@ -1,6 +1,6 @@
 # rdmo — Shopping Cart
 
-A modern minimalist shopping cart built with React 19 + React Router v7. Developed by **Aero Flamiano**.
+A modern minimalist shopping cart built with React 19 + React Router v7.
 
 ## Quick Start
 
@@ -46,6 +46,20 @@ npm run build     # production build
 ## Design
 
 Lively minimalism: a monochrome base (cream `#F7F7F5`, off-black `#111110`) with a single electric blue accent (`#3D5AFE`) for interactive elements and highlights. Typography pairs Outfit (geometric sans) with Space Mono (monospace for prices and the logo). Dark mode inverts the grayscale scale while preserving the blue accent.
+
+## CSS Naming Convention
+
+All styles follow **BEM (Block Element Modifier)**:
+
+```
+block__element--modifier
+```
+
+- **Block** — standalone component (`navbar`, `product-card`, `cart-item`)
+- **Element** — a part of the block, separated by `__` (`navbar__link`, `product-card__image`)
+- **Modifier** — a variant or state, separated by `--` (`navbar__link--active`, `product-card__add--added`)
+
+All styles live in a single `src/styles/global.css` file, organized by block with section headers.
 
 ## Tech Stack
 
